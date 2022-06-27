@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import dragableComponent from "../components/dragableComponent.vue";
+import import_csv from "../components/importcsv.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +9,11 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: dragableComponent,
+    },
+    {
+      path: "/import",
+      name: "import",
+      component: import_csv,
     },
     // {
     //   path: "/about",
